@@ -1,0 +1,109 @@
+title-text: ""
+title-font: "Terminus 16"
+#title-color: "#950080"
+message-font: "Terminus 16"
+message-color: "#7f8c8d"
+message-bg-color: "#4d4d4d"
+desktop-color: "#000000"
+desktop-image: "background.png"
+terminal-font: "Terminus 16"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+
++ boot_menu {
+    left = 20%
+    #width = 250
+    width = 60%
+    #top = 50%-125
+    #height = 400
+    top = 13%
+    height = 68%
+    item_height = 48
+    item_padding = 5
+    icon_width = 48
+    icon_height = 48
+    item_icon_space = 60
+    item_spacing = 5
+    item_font =  "DejaVu Sans Regular 39"
+    item_color = "#cccccc"
+    #item_color = "#FFA2A2"
+    selected_item_font = "DejaVu Sans Regular 39"
+    selected_item_color = "#FFFF00"
+    selected_item_pixmap_style = "selected_*.png"
+    menu_pixmap_style = "menu_*.png"
+    scrollbar = true
+    scrollbar_width = 10
+    scrollbar_thumb = "slider_*.png"
+}
+
+#+ progress_bar {
+#    id = "__timeout__"
+#    left = 0
+#    top = 100%-32
+#    width = 100%
+#    height = 32
+#    show_text = false
+#    bar_style = "progress_bar_*.png"
+#    highlight_style = "progress_bar_hl_*.png"
+#}
+
++ progress_bar {
+    id = "__timeout__"
+    left = 50%-125
+    top = 78%
+    width = 250
+    height = 20
+    show_text = true
+    font = "Terminus 16"
+    text_color = "#FF0000"
+    align = "center"
+    text = "@TIMEOUT_NOTIFICATION_MIDDLE@"
+    bar_style = "progress_bar2_*.png"
+}
+
++ vbox {
+    left = 50%-125
+    top = 86%
+    width = 250
+#    + label { width = 250 height = 20 align = "center" color = "#FFFF00" font = "Terminus 18" text = "[↵] Start Selected OS" }
+    + label { width = 250 height = 20 align = "center" color = "#FFFF00" font = "Terminus 18" text = "[➦] Start selected OS" }
+    + label { width = 250 height = 20 align = "center" color = "#FFFF00" font = "Terminus 18" text = "[↑ and ↓ Key] Navigation" }
+    + label { width = 250 height = 20 align = "center" color = "#FFFF00" font = "Terminus 18" text = "[E] Edit Selection" }
+    + label { width = 250 height = 20 align = "center" color = "#FFFF00" font = "Terminus 18" text = "[C] Commandline" }
+}
+
++ label {
+    top = 64%
+    height = 35
+    left = 8%
+    width = 100%
+text = "Welcome Back!"
+    align = "left"
+    font = "Tokyo Drifter Regular 16"
+    color = "#00FFFF"
+}
+
++ label {
+    top = 66%
+    height = 35
+    left = 8%
+    width = 100%
+text = "Let's Get To Work"
+    align = "left"
+    font = "Tokyo Drifter Regular 16"
+    color = "#00FFFF"
+}
+
++ label {
+    top = 7%
+    height = 35
+    left = 0%
+    width = 100%
+text = "Universal Secure Boot"
+    align = "center"
+    font = "Tokyo Drifter Regular 24"
+    color = "#950080"
+}
